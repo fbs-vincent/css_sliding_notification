@@ -1,0 +1,122 @@
+.small-notif-notification {
+  visibility: hidden;
+  background-color: #eee;
+  position: fixed;
+  z-index: 1;
+  right: 30px;
+  max-width: 298px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.small-notif-show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    right: 0;
+    opacity: 0;
+  }
+  to {
+    right: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    right: 0;
+    opacity: 0;
+  }
+  to {
+    right: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    right: 30px;
+    opacity: 1;
+  }
+  to {
+    right: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    right: 30px;
+    opacity: 1;
+  }
+  to {
+    right: 0;
+    opacity: 0;
+  }
+}
+
+.small-notif-fa {
+  padding: 10px 10px;
+  display: flex;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.fa-success {
+  background-color: limegreen;
+}
+
+.fa-error {
+  background-color: #ff3333;
+}
+
+.small-notif-close {
+  padding: 10px 10px;
+  border-left: 1px solid #fff;
+  display: flex;
+  cursor: pointer;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.small-notif-close:hover {
+  background-color: #bbb;
+  color: #fff;
+}
+
+.small-notif-fa i {
+  font-size: 22px;
+  color: #fff;
+  display: block;
+}
+
+.small-notif-close i {
+  font-size: 22px;
+  vertical-align: middle;
+}
+
+.small-notif-content-container {
+  vertical-align: middle;
+  padding: 10px 10px;
+  display: inline-block;
+}
+
+.small-notif-content {
+  display: block;
+}
+
+.status {
+  display: block;
+}
